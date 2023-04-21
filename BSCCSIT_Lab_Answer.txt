@@ -1,0 +1,16 @@
+1. Total 8 Commits
+Command: git log --oneline
+
+2. i. Create Branch
+      Command: git branch BSCCSIT_Lab_Test
+  ii. List all branches
+      Command: git branch -a
+      Output:
+      BSCCSIT_Lab_Test
+      *main
+      remotes/origin/HEAD -> origin/main
+      remotes/origin/main
+        
+  iii. Checkout 
+       Command: git checkout BSCCSIT_Lab_Test
+       
