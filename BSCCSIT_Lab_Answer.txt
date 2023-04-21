@@ -13,4 +13,9 @@ Command: git log --oneline
         
   iii. Checkout 
        Command: git checkout BSCCSIT_Lab_Test
-       
+
+   iv. Stage and Commits
+       Command: git add -A
+       Command: git commit -m "Answer from Question 2a 1 to 2c"
+                
+
