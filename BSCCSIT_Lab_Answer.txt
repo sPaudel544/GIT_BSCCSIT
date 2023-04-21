@@ -1,21 +1,128 @@
-1. Total 8 Commits
-Command: git log --oneline
+PS D:\Suparth SPM Lab\gitques> git clone https://github.com/suparthghimire/GIT_BSCCSIT.git .
+Cloning into '.'...
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 25 (delta 5), reused 10 (delta 1), pack-reused 0
+Resolving deltas: 100% (5/5), done.
 
-2. i. Create Branch
-      Command: git branch BSCCSIT_Lab_Test
-  ii. List all branches
-      Command: git branch -a
-      Output:
-      BSCCSIT_Lab_Test
-      *main
-      remotes/origin/HEAD -> origin/main
-      remotes/origin/main
-        
-  iii. Checkout 
-       Command: git checkout BSCCSIT_Lab_Test
+------
 
-   iv. Stage and Commits
-       Command: git add -A
-       Command: git commit -m "Answer from Question 2a 1 to 2c"
-                
+PS D:\Suparth SPM Lab\gitques> git log --oneline
+0f398cb (HEAD -> main, origin/main, origin/HEAD) Update README.md
+fdf4158 Update README.md
+be8472b Update README.md
+d01aac8 Update README.md
+a4d5749 Change in Readme
+PS D:\Suparth SPM Lab\gitques> git branch -a
+  remotes/origin/main
+PS D:\Suparth SPM Lab\gitques> git branch BSCCSIT_Lab_Test
+PS D:\Suparth SPM Lab\gitques> git branch -a
+  BSCCSIT_Lab_Test
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
 
+------
+
+PS D:\Suparth SPM Lab\gitques> git checkout BSCCSIT_Lab_Test
+Switched to branch 'BSCCSIT_Lab_Test'
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git add -A
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git commit -m "Answer from Question 2a 1 to 2c"
+Author identity unknown
+
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+
+fatal: unable to auto-detect email address (got 'Dell@DESKTOP-RNG24EK.(none)')
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git config --global user.name "Your Name"
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git add -A
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git config --global user.name "Your Name"
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git commit -m "Answer from Question 2a 1 to 2c" 
+[BSCCSIT_Lab_Test 3991bc4] Answer from Question 2a 1 to 2c
+ create mode 100644 BSCCSIT_Lab_Answer.txt
+Your branch is up to date with 'origin/main'.
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git merge BSCCSIT_Lab_Test
+Fast-forward
+ BSCCSIT_Lab_Answer.txt | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git checkout BSCCSIT_Lab_Test
+Switched to branch 'BSCCSIT_Lab_Test'
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git add -A
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git commit -m "Answer from Question 2d"        
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git merge BSCCSIT_Lab_Test
+Updating 3991bc4..2a68c2d
+Fast-forward
+ BSCCSIT_Lab_Answer.txt | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+2a68c2d (HEAD -> main, BSCCSIT_Lab_Test) Answer from Question 2d
+3991bc4 Answer from Question 2a 1 to 2c
+0f398cb (origin/main, origin/HEAD) Update README.md
+309ed6a Update README.md
+62fde77 file removed
+fdf4158 Update README.md
+be8472b Update README.md
+d01aac8 Update README.md
+a4d5749 Change in Readme
+b7738b9 First Commit with files
+
+------
+
+PS D:\Suparth SPM Lab\gitques> git push -u origin main 
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 868 bytes | 868.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/suparthghimire/GIT_BSCCSIT.git
+   0f398cb..2a68c2d  main -> main
+branch 'main' set up to track 'origin/main'.
+
+------
+
+PS D:\Suparth SPM Lab\gitques>
