@@ -1,0 +1,17 @@
+git clone https://github.com/spaudel544/GIT_BSCCSIT.git
+
+cd GIT_BSCCSIT
+
+git rev-list --count HEAD
+
+git checkout -b BSCCSIT_Lab_Test
+
+git branch
+
+git branch -r
+
+git branch -a
+
+Second commit: updated Git commands section
+
+Third commit: final update before merge
